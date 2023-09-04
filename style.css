@@ -1,0 +1,62 @@
+html {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+body {
+    font-family: Pretendard Medium;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.7px;
+    margin: 1rem;
+    font-size: 14px;
+
+    width: 270px;
+    background-color: #f7f6f4;
+    color: #292929;
+    display: flex;
+    justify-content: center;
+
+    animation: fadein ease 1.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.head {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1D9BF0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-evenly;
+}
+
+.icon-svg {
+    width: 16px;
+}
+
+.icon-link {
+    margin-right: 0.3rem;
+    font-size: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #292929;
+        color: #f7f6f4;
+    }
+}
