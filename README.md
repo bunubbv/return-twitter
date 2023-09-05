@@ -1,2 +1,2 @@
 ## Return Twitter
-Twitter의 여러 요소를 X 개편 전 상태로 변경합니다.
+리브랜딩 전 Twitter로 바꾸는 확장 프로그램

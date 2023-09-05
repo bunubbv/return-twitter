@@ -1,16 +1,26 @@
 {
     "manifest_version": 3,
     "name": "Return Twitter",
+    "description": "리브랜딩 전 Twitter로 바꾸는 확장 프로그램",
     "version": "0.1.0",
-  
-    "description": "Twitter의 여러 요소를 X 개편 전 상태로 변경합니다.",
-    "icons": { 
-        "128": "icon.png"
-    },
-
+    "permissions": [
+        "activeTab",
+        "storage",
+        "tabs"
+    ],
+    
     "author": "me@bunubbv.com",
     "action": {
-        "default_popup": "index.html",
-        "default_icon": "icon.png"
+        "default_popup": "default/index.html"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://twitter.com/*"],
+        "js": ["scripts/content.js"]
+      }
+    ],
+    "icons": {
+      "128": "images/icon.png"
     }
-}
+  }
