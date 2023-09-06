@@ -1,26 +1,25 @@
 {
-    "manifest_version": 3,
-    "name": "Return Twitter",
-    "description": "리브랜딩 전 Twitter로 바꾸는 확장 프로그램",
-    "version": "0.1.0",
-    "permissions": [
-        "activeTab",
-        "storage",
-        "tabs"
-    ],
-    
-    "author": "me@bunubbv.com",
-    "action": {
-        "default_popup": "default/index.html"
-    },
+	"manifest_version": 3,
+	"name": "X To Twitter",
+	"description": "리브랜딩 전 Twitter로 바꾸는 확장 프로그램",
+	"version": "0.1.0",
+	"permissions": [
+    	"activeTab",
+    	"storage",
+    	"tabs"
+	],
 
-    "content_scripts": [
-      {
-        "matches": ["*://twitter.com/*"],
-        "js": ["scripts/content.js"]
-      }
-    ],
-    "icons": {
-      "128": "images/icon.png"
-    }
-  }
+	"author": "me@bunubbv.com",
+	"action": {
+    	"default_popup": "layouts/index.html"
+	},
+
+	"content_scripts": [{
+    	"matches": ["*://twitter.com/*"],
+        "js": ["scripts/injection.js"]
+	}],
+
+	"icons": {
+    	"128": "images/icon.png"
+	}
+}
